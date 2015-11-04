@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'ExoSemiBold';
+  src: url("/fonts/exo2.0-semibold-webfont.eot");
+  src: url("/fonts/exo2.0-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/exo2.0-semibold-webfont.woff") format("woff"), url("/fonts/exo2.0-semibold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.material-icons.md-18 {
+  font-size: 18px; }
+.material-icons.md-24 {
+  font-size: 24px; }
+.material-icons.md-36 {
+  font-size: 36px; }
+.material-icons.md-48 {
+  font-size: 48px; }
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-light {
+  color: white; }
+  .material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3); }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.container {
+  padding: 0 5%; }
+
+.icon {
+  margin-top: 3px;
+  width: 42px; }
+
+a {
+  text-decoration: none;
+  color: #3bd2db; }
+
+p {
+  font-family: 'Century Gothic';
+  font-weight: 300; }
+
+body {
+  margin: 0; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: ExoSemiBold; }
+  body h1 {
+    font-size: 48px;
+    color: #fff; }
+  body h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #3bd2db; }
+  body header {
+    height: 50px;
+    box-shadow: 0 4px 5px 0; }
+  body header, body footer {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    background: #3bd2db; }
+  body footer {
+    position: fixed;
+    bottom: 0; }
+    body footer .ex-links a {
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: top; }
+  @media screen and (max-width: 780px) {
+    body nav ul {
+      padding: 0;
+      width: 25%; } }
+  body nav ul li {
+    margin-left: 10px;
+    display: inline-block; }
+    body nav ul li a {
+      border-bottom: 5px solid #fff;
+      padding: 16px 16px 11px;
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Century Gothic';
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.2em; }
+      body nav ul li a:hover {
+        border-color: #0a3d82;
+        color: #0a3d82; }
+  body .main {
+    padding: 30px 8% 100px;
+    background: #fff; }
+    body .main section {
+      border-bottom: 1px solid #3bd2db;
+      margin-bottom: 50px;
+      padding-bottom: 50px; }
+      body .main section:last-child {
+        border: 0;
+        padding: 0; }
+      body .main section#portfolio .port-img {
+        margin: 0 4% 20px 0;
+        width: 30%;
+        display: inline-block; }
+        body .main section#portfolio .port-img:nth-child(3n) {
+          margin-right: 0; }
+        body .main section#portfolio .port-img a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          z-index: 1; }
+          body .main section#portfolio .port-img a:hover {
+            background: #3bd2db; }
+          body .main section#portfolio .port-img a img {
+            width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

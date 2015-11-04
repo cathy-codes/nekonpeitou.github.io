@@ -1,0 +1,128 @@
+@import "functions";
+@import "mixins";
+@import "fonts";
+@import "md-style";
+
+$small: 780px;
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.container {
+    padding: 0 5%;
+}
+.icon {
+    margin-top: 3px;
+    width: 42px;
+}
+a {
+    text-decoration: none;
+    color: #3bd2db;
+}
+p {
+    font-family: 'Century Gothic';
+    font-weight: 300;
+}
+body {
+    margin: 0;
+    h1,h2,h3,h4,h5,h6 {
+        font-family: ExoSemiBold;
+    }
+    h1 {
+        font-size: 48px;
+        color: #fff;
+    }
+    h2 {
+        margin-bottom: 20px;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #3bd2db;
+    }
+    header {
+        height: 50px;
+        box-shadow: 0 4px 5px 0;
+    }
+    header, footer {
+        padding: 10px 0; 
+        width: 100%;  
+        display: block;                      
+        background: #3bd2db; 
+        //background: #0a3d82;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        .ex-links {
+            a {
+                margin-right: 10px;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+    nav { 
+        ul {  
+            @media screen and (max-width: $small) {
+                padding: 0;
+                width: perc(100px,400px);
+            } 
+            li {
+                margin-left: 10px;
+                display: inline-block;         
+                a {
+                    border-bottom: 5px solid #fff;  
+                    padding: 16px 16px 11px;
+                    display: block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'Century Gothic';
+                    color: #fff;
+                    font-weight: 600;
+                    letter-spacing: 0.2em;     
+                    &:hover {
+                        border-color: #0a3d82;
+                        color: #0a3d82;
+                    }            
+                }
+            }
+        }
+    }
+    .main {
+        padding: 30px 8% 100px;
+        background: #fff;
+        section {
+            border-bottom: 1px solid #3bd2db;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            &:last-child {
+                border: 0;
+                //margin: 0;
+                padding: 0;
+            }
+            &#portfolio {
+                .port-img {
+                    margin: 0 4% 20px 0;
+                    width: 30%;
+                    display: inline-block;
+                    &:nth-child(3n) {
+                        margin-right: 0;
+                    }
+                    a {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                        &:hover {
+                            background: #3bd2db;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
