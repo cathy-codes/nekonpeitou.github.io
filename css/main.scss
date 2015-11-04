@@ -24,6 +24,7 @@ a {
 p {
     font-family: 'Century Gothic';
     font-weight: 300;
+    line-height: 1.3em;
 }
 body {
     margin: 0;
@@ -34,11 +35,17 @@ body {
         font-size: 48px;
         color: #fff;
     }
+    h2,h3 {
+        text-transform: uppercase;
+        color: #3bd2db;
+    }
     h2 {
         margin-bottom: 20px;
         font-size: 26px;
-        text-transform: uppercase;
-        color: #3bd2db;
+    }
+    h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
     }
     header {
         height: 50px;
@@ -101,12 +108,20 @@ body {
                 //margin: 0;
                 padding: 0;
             }
+            &#about {
+                div {
+                    padding-bottom: 30px;
+                    &:last-child {
+                        padding: 0;
+                    }
+                }
+            }
             &#portfolio {
                 .port-img {
                     margin: 0 4% 20px 0;
                     width: 30%;
                     display: inline-block;
-                    &:nth-child(3n) {
+                    &:nth-child(3n+1) {
                         margin-right: 0;
                     }
                     a {
