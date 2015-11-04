@@ -29,6 +29,9 @@
 
 .container {
   padding: 0 5%; }
+  @media screen and (max-width: 860px) {
+    .container {
+      padding: 0 2%; } }
 
 .icon {
   margin-top: 3px;
@@ -37,6 +40,8 @@
 a {
   text-decoration: none;
   color: #3bd2db; }
+  a:hover {
+    color: #0a3d82; }
 
 p {
   font-family: 'Century Gothic';
@@ -74,16 +79,25 @@ body {
       margin-right: 10px;
       display: inline-block;
       vertical-align: top; }
-  @media screen and (max-width: 780px) {
-    body nav ul {
-      padding: 0;
-      width: 25%; } }
+      @media screen and (max-width: 860px) {
+        body footer .ex-links a .material-icons {
+          font-size: 24px; }
+        body footer .ex-links a img {
+          width: 21px; } }
   body nav ul li {
     margin-left: 10px;
     display: inline-block; }
+    @media screen and (max-width: 860px) {
+      body nav ul li {
+        margin: 11px 0;
+        border-right: 2px solid #fff;
+        padding: 0 5px; }
+        body nav ul li:last-child {
+          border: none;
+          padding: 0 0 0 5px; } }
     body nav ul li a {
       border-bottom: 5px solid #fff;
-      padding: 16px 16px 11px;
+      padding: 11px 16px 11px;
       display: block;
       text-decoration: none;
       text-transform: uppercase;
@@ -91,12 +105,18 @@ body {
       color: #fff;
       font-weight: 600;
       letter-spacing: 0.2em; }
+      @media screen and (max-width: 860px) {
+        body nav ul li a {
+          border: 0;
+          padding: 0; } }
       body nav ul li a:hover {
-        border-color: #0a3d82;
-        color: #0a3d82; }
+        border-color: #0a3d82; }
   body .main {
     padding: 30px 8% 100px;
     background: #fff; }
+    @media screen and (max-width: 860px) {
+      body .main {
+        padding-bottom: 50px; } }
     body .main section {
       border-bottom: 1px solid #3bd2db;
       margin-bottom: 50px;
@@ -111,7 +131,14 @@ body {
       body .main section#portfolio .port-img {
         margin: 0 4% 20px 0;
         width: 30%;
-        display: inline-block; }
+        display: inline-block;
+        /*@media screen and (max-width: $medium) {
+            margin-right: 3%;
+            width: 48%;
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }*/ }
         body .main section#portfolio .port-img:nth-child(3n+1) {
           margin-right: 0; }
         body .main section#portfolio .port-img a {
